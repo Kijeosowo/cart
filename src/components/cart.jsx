@@ -29,7 +29,7 @@ const Cart = () => {
         "https://images-cdn.ubuy.com.sa/65c933102c464c064c203c8f-coofandy-men-39-s-varsity-jacket.jpg",
       title: "Cofandy's men Varsity Jacket",
       description: "Regular fit casual Baseball Bomber",
-      price: 5.89,
+      price: 20999,
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Cart = () => {
         "https://techmall.com.ng/wp-content/uploads/2024/07/JBL-Boombox-3-1.jpg",
       title: "JBL Charge 5",
       description: "Portable Waterproof (IP67) Bluetooth",
-      price: 5.89,
+      price: 15499,
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Cart = () => {
         "https://tradefair.ng/wp-content/uploads/2021/12/IMG_COM_20211215_13350373-1.jpg",
       title: "Air Force Nike sneakers",
       description: "Size 42 - 44",
-      price: 2.89,
+      price: 59999,
     },
   ];
 
@@ -66,7 +66,7 @@ const Cart = () => {
               <p className="text-[#777]">{item.description}</p>
               <div className="flex items-center gap-2">
                 <p className="text-black font-bold text-2xl">
-                  ${item.price.toFixed(2)}
+                  ₦{item.price}
                 </p>
                 <button
                   className="self-start bg-orange-600 hover:bg-orange-500 text-white py-2 px-4 rounded cursor-pointer flex gap-2"
@@ -87,7 +87,7 @@ const Cart = () => {
         <p className="text-gray-600 mb-2 flex gap-2">
           Items in <GiShoppingCart className="mt-1" /> {carts.length}
         </p>
-        <p>${totalPrice.toFixed(2)}</p>
+        <p>₦{totalPrice}</p>
         <button
           className="bg-green-600 p-2 rounded text-white mt-3 flex gap-2 cursor-pointer"
           onClick={handleCheckout}>
