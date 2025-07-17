@@ -1,6 +1,6 @@
 # Overview
 
-This project is a simple demonstration of how the "Add to Cart" functionality works in an e-commerce web application. It simulates a basic shopping experience where users can:
+This project is a simple demonstration of how the "Add to Cart" functionality works in an e-commerce web application. It shows a basic shopping experience where users can:
 
 Browse a list of products
 
