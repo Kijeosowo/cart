@@ -13,6 +13,7 @@ const Cart = () => {
   // Function to Calculate the total price of added items
   const totalPrice = cartsItem.reduce((acc, item) => acc + item.price, 0);
 
+  // Function to handle checkout
   const handleCheckout = () => {
     if (cartsItem.length === 0) {
       alert("Your cart is empty!");
